@@ -14,8 +14,8 @@ ENV DATADIR=$MYSQL_DIR/databases
 RUN \
  echo "**** add mariadb repository ****" && \
   apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 && \
- echo "deb [arch=amd64,i386] http://mirrors.coreix.net/mariadb/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb.list && \
- echo "deb-src http://mirrors.coreix.net/mariadb/repo/10.1/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb.list && \
+ echo "deb [arch=amd64,i386] http://mirrors.coreix.net/mariadb/repo/10.2/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb.list && \
+ echo "deb-src http://mirrors.coreix.net/mariadb/repo/10.2/ubuntu xenial main" >> /etc/apt/sources.list.d/mariadb.list && \
  echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
